@@ -1,0 +1,345 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D12E3B815F1F03200844225 /* libapr-1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D12E3B715F1F03200844225 /* libapr-1.dylib */; };
+		6D2A1386160EC11200955DA9 /* dis.c in Sources */ = {isa = PBXBuildFile; fileRef = 6D2A1385160EC11200955DA9 /* dis.c */; };
+		6D50A9E916098050005D6091 /* printer_stdout.c in Sources */ = {isa = PBXBuildFile; fileRef = 6D50A9E816098050005D6091 /* printer_stdout.c */; };
+		6D571488161C0390002D1E3E /* operandParsers.c in Sources */ = {isa = PBXBuildFile; fileRef = 6D571487161C0390002D1E3E /* operandParsers.c */; };
+		6DD2CB5E16051AF900A66399 /* opdb.c in Sources */ = {isa = PBXBuildFile; fileRef = 6DD2CB5D16051AF900A66399 /* opdb.c */; };
+		6DD2CB621605337000A66399 /* testdb.db in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6DD2CB5F16052E6300A66399 /* testdb.db */; };
+		6DE116FC15F074B800052D86 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6DE116FB15F074B800052D86 /* main.c */; };
+		6DE116FE15F074B800052D86 /* disassembler.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6DE116FD15F074B800052D86 /* disassembler.1 */; };
+		6DEE652B15FBFB4200998E6F /* dis_elfParser.c in Sources */ = {isa = PBXBuildFile; fileRef = 6DEE652A15FBFB4200998E6F /* dis_elfParser.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6DD2CB611605336600A66399 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				6DD2CB621605337000A66399 /* testdb.db in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DE116F515F074B800052D86 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				6DE116FE15F074B800052D86 /* disassembler.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6D12E3B715F1F03200844225 /* libapr-1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libapr-1.dylib"; path = "usr/lib/libapr-1.dylib"; sourceTree = SDKROOT; };
+		6D12E3BA15F1F53600844225 /* apr.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = apr.xcconfig; sourceTree = SOURCE_ROOT; };
+		6D2A1385160EC11200955DA9 /* dis.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dis.c; sourceTree = "<group>"; };
+		6D50A9E716097FF6005D6091 /* printer_stdout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = printer_stdout.h; sourceTree = "<group>"; };
+		6D50A9E816098050005D6091 /* printer_stdout.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = printer_stdout.c; sourceTree = "<group>"; };
+		6D571487161C0390002D1E3E /* operandParsers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = operandParsers.c; sourceTree = "<group>"; };
+		6D8B9B0D15FED80B00DBC9BC /* opdb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = opdb.h; sourceTree = "<group>"; };
+		6DD2CB5B16050A8C00A66399 /* base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = base.h; sourceTree = "<group>"; };
+		6DD2CB5D16051AF900A66399 /* opdb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = opdb.c; sourceTree = "<group>"; };
+		6DD2CB5F16052E6300A66399 /* testdb.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = testdb.db; sourceTree = "<group>"; };
+		6DE116F715F074B800052D86 /* disassembler */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = disassembler; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DE116FB15F074B800052D86 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		6DE116FD15F074B800052D86 /* disassembler.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = disassembler.1; sourceTree = "<group>"; };
+		6DE1171215F090E500052D86 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		6DEE652715FBE9BF00998E6F /* dis_portability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dis_portability.h; sourceTree = "<group>"; };
+		6DEE652815FBF4FE00998E6F /* dis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dis.h; sourceTree = "<group>"; };
+		6DEE652A15FBFB4200998E6F /* dis_elfParser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dis_elfParser.c; sourceTree = "<group>"; };
+		6DEE652C15FBFB7800998E6F /* dis_elfParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dis_elfParser.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DE116F415F074B800052D86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D12E3B815F1F03200844225 /* libapr-1.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D50A9E516097CB3005D6091 /* printer */ = {
+			isa = PBXGroup;
+			children = (
+				6D50A9E716097FF6005D6091 /* printer_stdout.h */,
+				6D50A9E816098050005D6091 /* printer_stdout.c */,
+			);
+			name = printer;
+			sourceTree = "<group>";
+		};
+		6D8B9B0B15FED7FA00DBC9BC /* opdb */ = {
+			isa = PBXGroup;
+			children = (
+				6D8B9B0D15FED80B00DBC9BC /* opdb.h */,
+				6DD2CB5D16051AF900A66399 /* opdb.c */,
+			);
+			name = opdb;
+			sourceTree = "<group>";
+		};
+		6DC285131619279C0076A0D0 /* disassembler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = disassembler;
+			sourceTree = "<group>";
+		};
+		6DD2CB6016052E6C00A66399 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				6DD2CB5F16052E6300A66399 /* testdb.db */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		6DE116EC15F074B800052D86 = {
+			isa = PBXGroup;
+			children = (
+				6D12E3B715F1F03200844225 /* libapr-1.dylib */,
+				6DE116FA15F074B800052D86 /* disassembler */,
+				6DE116F815F074B800052D86 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6DE116F815F074B800052D86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DE116F715F074B800052D86 /* disassembler */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DE116FA15F074B800052D86 /* disassembler */ = {
+			isa = PBXGroup;
+			children = (
+				6DC285131619279C0076A0D0 /* disassembler */,
+				6D50A9E516097CB3005D6091 /* printer */,
+				6DD2CB6016052E6C00A66399 /* resources */,
+				6D8B9B0B15FED7FA00DBC9BC /* opdb */,
+				6DEE652915FBFB2300998E6F /* elf */,
+				6DEE652515FBE9A600998E6F /* base */,
+				6D12E3BA15F1F53600844225 /* apr.xcconfig */,
+				6DE116FB15F074B800052D86 /* main.c */,
+				6DE1171215F090E500052D86 /* Makefile */,
+				6DE116FD15F074B800052D86 /* disassembler.1 */,
+				6DD2CB5B16050A8C00A66399 /* base.h */,
+			);
+			path = disassembler;
+			sourceTree = "<group>";
+		};
+		6DEE652515FBE9A600998E6F /* base */ = {
+			isa = PBXGroup;
+			children = (
+				6DEE652715FBE9BF00998E6F /* dis_portability.h */,
+				6DEE652815FBF4FE00998E6F /* dis.h */,
+				6D2A1385160EC11200955DA9 /* dis.c */,
+				6D571487161C0390002D1E3E /* operandParsers.c */,
+			);
+			name = base;
+			sourceTree = "<group>";
+		};
+		6DEE652915FBFB2300998E6F /* elf */ = {
+			isa = PBXGroup;
+			children = (
+				6DEE652A15FBFB4200998E6F /* dis_elfParser.c */,
+				6DEE652C15FBFB7800998E6F /* dis_elfParser.h */,
+			);
+			name = elf;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DE116F615F074B800052D86 /* disassembler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DE1170115F074B800052D86 /* Build configuration list for PBXNativeTarget "disassembler" */;
+			buildPhases = (
+				6D12E3B915F1F0AC00844225 /* ShellScript */,
+				6DE116F315F074B800052D86 /* Sources */,
+				6DE116F415F074B800052D86 /* Frameworks */,
+				6DE116F515F074B800052D86 /* CopyFiles */,
+				6DD2CB611605336600A66399 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = disassembler;
+			productName = disassembler;
+			productReference = 6DE116F715F074B800052D86 /* disassembler */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DE116EE15F074B800052D86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = karurosu;
+			};
+			buildConfigurationList = 6DE116F115F074B800052D86 /* Build configuration list for PBXProject "disassembler" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6DE116EC15F074B800052D86;
+			productRefGroup = 6DE116F815F074B800052D86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DE116F615F074B800052D86 /* disassembler */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D12E3B915F1F0AC00844225 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "LLVM_XCCONFIG=\"apr.xcconfig\"\nLIB_ELF=\"/usr/local/Cellar/libelf/0.8.13\"\nAPR_CFLAGS=\"`apr-1-config --cflags --includes`\"\nAPR_LDFLAGS=\"`apr-1-config --ldflags --link-ld --libs`\"\n\necho \"// Configuration file for LLVM settings, generated as a build phase.\" > $LLVM_XCCONFIG\necho \"APR_CFLAGS = $APR_CFLAGS -I$LIB_ELF/include\" >> $LLVM_XCCONFIG\necho \"APR_LDFLAGS = $APR_LDFLAGS -L$LIB_ELF/lib -lelf\" >> $LLVM_XCCONFIG\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DE116F315F074B800052D86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DE116FC15F074B800052D86 /* main.c in Sources */,
+				6DEE652B15FBFB4200998E6F /* dis_elfParser.c in Sources */,
+				6DD2CB5E16051AF900A66399 /* opdb.c in Sources */,
+				6D50A9E916098050005D6091 /* printer_stdout.c in Sources */,
+				6D2A1386160EC11200955DA9 /* dis.c in Sources */,
+				6D571488161C0390002D1E3E /* operandParsers.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6DE116FF15F074B800052D86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6DE1170015F074B800052D86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6DE1170215F074B800052D86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D12E3BA15F1F53600844225 /* apr.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "${APR_CFLAGS}";
+				OTHER_LDFLAGS = "${APR_LDFLAGS}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6DE1170315F074B800052D86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D12E3BA15F1F53600844225 /* apr.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "${APR_CFLAGS}";
+				OTHER_LDFLAGS = "${APR_LDFLAGS}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DE116F115F074B800052D86 /* Build configuration list for PBXProject "disassembler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DE116FF15F074B800052D86 /* Debug */,
+				6DE1170015F074B800052D86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DE1170115F074B800052D86 /* Build configuration list for PBXNativeTarget "disassembler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DE1170215F074B800052D86 /* Debug */,
+				6DE1170315F074B800052D86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DE116EE15F074B800052D86 /* Project object */;
+}
